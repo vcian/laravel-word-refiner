@@ -1,6 +1,6 @@
 <?php
 
-namespace WordRefiner;
+namespace Viitorcloudtechnologies\WordRefiner;
 
 use Illuminate\Support\ServiceProvider;
 
