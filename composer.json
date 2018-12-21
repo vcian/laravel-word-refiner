@@ -1,0 +1,35 @@
+{
+    "name": "viitorcloudtechnologies/laravel-word-refiner",
+    "description": "Word refining for laravel collection data",
+    "keywords": [
+        "viitorcloudtechnologies",
+        "laravel",
+        "word-refiner"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "viitoradmin",
+            "email": "administrator@viitorcloud.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Viitor\\WordRefiner\\": "src/"
+        },
+        "files": [
+            "src/http/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Viitor\\WordRefiner\\WordRefinerProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
