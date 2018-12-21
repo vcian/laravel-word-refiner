@@ -15,6 +15,13 @@ After installation, You need to publish the config file for this package. This w
 ```bash
 php artisan vendor:publish --provider="WordRefiner\WordRefinerProvider"
 ```
+
+### Usage
+
+Use this helper function to refine collection data value. 
+
+refiner(collect(['key' => 'value'])); //It will remove deprecated word from your value.
+
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.

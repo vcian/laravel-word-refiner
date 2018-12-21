@@ -19,7 +19,7 @@
             "WordRefiner\\": "src/"
         },
         "files": [
-            "src/http/helpers.php"
+            "src/helpers.php"
         ]
     },
     "minimum-stability": "dev",

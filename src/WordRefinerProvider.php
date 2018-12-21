@@ -13,7 +13,7 @@ class WordRefinerProvider extends ServiceProvider
      */
     public function boot()
     {
-        require_once __DIR__ . '/http/helpers.php';
+        require_once __DIR__ . '/helpers.php';
         require_once __DIR__ . '/config/refiner.php';
         $this->publishes([
             __DIR__.'/config/refiner.php' => config_path('refiner.php'),
