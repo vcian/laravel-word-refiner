@@ -12,6 +12,11 @@ You can install the package via composer:
 composer require viitorcloudtechnologies/laravel-word-refiner
 ```
 
+After installation, You need to publish the config file for this package. This will add the file config/refiner.php, where you can add extra word which you want to deprecate from your collection data.
+
+```bash
+php artisan vendor:publish --provider="WordRefiner\WordRefinerProvider"
+```
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
