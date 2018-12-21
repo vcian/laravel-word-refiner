@@ -10,8 +10,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "viitoradmin",
-            "email": "administrator@viitorcloud.com"
+            "name": "Viitor Cloud",
+            "email": "ruchit@viitor.cloud"
         }
     ],
     "autoload": {
