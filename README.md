@@ -6,7 +6,9 @@ The Laravel Word Refiner package helps you to refine any words from your collect
 
 You can install the package via composer:
 
-    `composer require viitorcloudtechnologies/laravel-word-refiner`
+```bash
+composer require viitorcloudtechnologies/laravel-word-refiner
+```
 
 ### Changelog
 
