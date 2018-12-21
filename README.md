@@ -2,6 +2,8 @@
 
 The Laravel Word Refiner package helps you to refine any words from your collection data.
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+
 ## Installation
 
 You can install the package via composer:
