@@ -8,6 +8,9 @@ if (!function_exists('refiner')) {
     function refiner($request)
     {
         try {
+            if (is_array($request)) {
+                return $request;
+            }
             $requestData = $request->all();
             if ($requestData) {
                 foreach ($requestData as $individualKey => $individualValue) {
