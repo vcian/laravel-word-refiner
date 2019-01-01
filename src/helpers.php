@@ -26,7 +26,8 @@ if (!function_exists('refiner')) {
                     $detectWords = array_flip($detectWords);
 
                     foreach ($requestedString as $words) {
-                        if (!isset($detectWords[$words])) {
+                        $filterWords = rtrim(clean($words), '.');
+                        if (!isset($detectWords[$filterWords])) {
                             $filterString[] = $words;
                         }
                     }
