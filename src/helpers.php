@@ -11,14 +11,16 @@ if (!function_exists('refiner')) {
             if (is_array($request)) {
                 return $request;
             }
+
             $requestData = $request->all();
+
             if ($requestData) {
-                foreach ($requestData as $individualKey => $individualValue) {
+                foreach ($requestData as $key => $value) {
                     $filterString = [];
                     $requestedString = [];
 
-                    if (!is_array($individualValue)) {
-                        $requestedString = strtolower($individualValue);
+                    if (!is_array($value)) {
+                        $requestedString = strtolower($value);
                         $requestedString = explode(' ', $requestedString);
                     }
 
@@ -27,13 +29,14 @@ if (!function_exists('refiner')) {
 
                     foreach ($requestedString as $words) {
                         $filterWords = rtrim(clean($words), '.');
+
                         if (!isset($detectWords[$filterWords])) {
                             $filterString[] = $words;
                         }
                     }
 
                     $filterString = implode(' ', $filterString);
-                    $request = $request->merge([$individualKey => $filterString]);
+                    $request = $request->merge([$key => $filterString]);
                 }
             }
 
