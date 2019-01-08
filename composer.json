@@ -1,8 +1,9 @@
 {
-    "name": "viitorcloud/laravel-word-refiner",
+    "name": "vcian/laravel-word-refiner",
     "description": "Word refining for laravel collection data",
     "keywords": [
         "viitorcloud",
+        "vcian",
         "viitorcloudtechnologies",
         "laravel",
         "word-refiner"
