@@ -1,11 +1,13 @@
 <?php
 
+use Illuminate\Support\Facades\Log;
+
 if (!function_exists('refiner')) {
     /**
      * @param $request
-     * @return \Illuminate\Support\Collection
+     * @return mixed
      */
-    function refiner($request)
+    function refiner($request) : mixed
     {
         try {
             if (is_array($request)) {
@@ -28,7 +30,7 @@ if (!function_exists('refiner')) {
                     $detectWords = array_flip($detectWords);
 
                     foreach ($requestedString as $words) {
-                        $filterWords = rtrim(clean($words), '.');
+                        $filterWords = rtrim($words, '.');
 
                         if (!isset($detectWords[$filterWords])) {
                             $filterString[] = $words;
@@ -41,8 +43,9 @@ if (!function_exists('refiner')) {
             }
 
             return $request;
-        } catch (\Exception $ex) {
-            \Log::error($ex->getMessage());
+        } catch (Exception $ex) {
+            Log::error($ex->getMessage());
+
             return collect([]);
         }
     }
