@@ -9,13 +9,13 @@ The Laravel Word Refiner package helps you to refine any words from your collect
 You can install the package via composer:
 
 ```bash
-composer require viitorcloud/laravel-word-refiner
+composer require vcian/laravel-word-refiner
 ```
 
 After installation, You need to publish the config file for this package. This will add the file config/refiner.php, where you can add extra word which you want to deprecate from your collection data.
 
 ```bash
-php artisan vendor:publish --provider="WordRefiner\WordRefinerProvider"
+php artisan vendor:publish
 ```
 
 ### Usage

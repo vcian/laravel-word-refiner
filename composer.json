@@ -1,23 +1,26 @@
 {
     "name": "vcian/laravel-word-refiner",
-    "description": "Word refining for laravel collection data",
+    "description": "Word refining from laravel collection data",
     "keywords": [
-        "viitorcloud",
-        "vcian",
-        "viitorcloudtechnologies",
         "laravel",
-        "word-refiner"
+        "abuse word",
+        "moral police",
+        "abuse",
+        "word refiner",
+        "violence word"
     ],
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Viitor Cloud",
-            "email": "ruchit@viitor.cloud"
+            "name":     "Vcian - ViitorCloud",
+            "homepage": "https://github.com/vcian",
+            "role":     "Developer"
         }
     ],
     "autoload": {
         "psr-4": {
-            "WordRefiner\\": "src/"
+            "Vcian\\LaravelWordRefiner\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -27,11 +30,11 @@
     "extra": {
         "laravel": {
             "providers": [
-                "WordRefiner\\WordRefinerProvider"
+                "Vcian\\LaravelWordRefiner\\Providers\\WordRefinerProvider"
             ]
         }
     },
     "require": {
-        "php": ">=5.4.0"
+        "php": "^8.0"
     }
 }
